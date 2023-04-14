@@ -1,11 +1,10 @@
-"use strict";
-let username;
-let age;
-let isDying;
+var username;
+var age;
+var isDying;
 //note: album can be any type
-let album;
+var album;
 //note: postId can only be string or number, this is called union type
-let postId;
+var postId;
 username = 'jemali';
 age = 99;
 isDying = true;
@@ -14,16 +13,16 @@ postId = 'two';
 postId = 2;
 //note: if types don't need to be couersed into
 //note: another type for sum it is valid ts
-const sumNums = (a, b) => {
+var sumNums = function (a, b) {
     return a + b;
 };
-const strSumToNum = (a, b) => {
+var strSumToNum = function (a, b) {
     return a + b;
 };
 //note: booleans true and false is referred to with a zero for false
 //note: and one for true but you might wanna handle it with number
 //note: or the words true and false as boolean
-let isActive;
+var isActive;
 //note: union type can be more than two, it is not limited
-let zipCode;
-let re = /\w+/g;
+var zipCode;
+var re = /\w+/g;
